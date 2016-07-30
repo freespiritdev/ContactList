@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Contact List</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10">
+        <form id="contactForm" class="form-inline">
+          <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+          <input type="text" class="form-control" id="phone" placeholder="Phone" required>
+          <input type="text" class="form-control" id="email" placeholder="Email" required>
+          <button class="btn btn-sm btn-info" id="addContact">Add Contact</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <ul id="contactList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!--modal-->
+    <div id="contactEditModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <form id="editContactForm">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Edit Name</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label>Contact Info:</label>
+                <input type="text" class="form-control" id="editContact" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>  
+      </form>
+    </div>
+
+
+
+  <li id="template" class="col-md-4"> 
+  <button class="btn btn-xs btn-info edit">Edit</button>
+  <span class="contact"></span>
+  
+  </li>
+
+
+</div>
+  
+ 
+
+  <script  src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>  
+</body>
+</html>

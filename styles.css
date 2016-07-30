@@ -1,0 +1,26 @@
+body{
+  color: #1b779b;
+  background-color: #c2d6d6;
+  font-family:  "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+input{
+  background-color: #fff;
+  width: 50%;
+}
+
+.form-control{
+  width: 50%;
+}
+
+#template{
+  display: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#addContact{
+ 
+}
